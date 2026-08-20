@@ -1,0 +1,37 @@
+=== GAS LEAKAGE ALERT SIMULATION ===
+
+Gas Level: 20
+Status: SAFE
+----------------------------
+
+Gas Level: 35
+Status: SAFE
+----------------------------
+
+Gas Level: 50
+Status: SAFE
+----------------------------
+
+Gas Level: 65
+Status: SAFE
+----------------------------
+
+Gas Level: 75
+Status: GAS LEAKAGE DETECTED!
+ALERT: Please take immediate safety precautions.
+----------------------------
+
+Gas Level: 90
+Status: GAS LEAKAGE DETECTED!
+ALERT: Please take immediate safety precautions.
+----------------------------
+
+
+=== GAS LEAKAGE ALERT TESTBENCH ===
+
+Test 1 | Gas Level: 20 | Expected: SAFE | Result: SAFE | PASS
+Test 2 | Gas Level: 50 | Expected: SAFE | Result: SAFE | PASS
+Test 3 | Gas Level: 69 | Expected: SAFE | Result: SAFE | PASS
+Test 4 | Gas Level: 70 | Expected: LEAKAGE | Result: LEAKAGE | PASS
+Test 5 | Gas Level: 80 | Expected: LEAKAGE | Result: LEAKAGE | PASS
+Test 6 | Gas Level: 100 | Expected: LEAKAGE | Result: LEAKAGE | PASS
